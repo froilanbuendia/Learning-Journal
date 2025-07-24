@@ -1,5 +1,69 @@
-html, 
+html,
 body {
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
+  font-family: "Source Sans 3", sans-serif;
+}
+nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 1em 2em;
+  font-size: 0.9375rem;
+  font-family: "Roboto", sans-serif;
+}
+
+h1 {
+  font-size: 1.875rem;
+  font-weight: 700;
+  margin: 0;
+  line-height: 1.25;
+  margin: 0.5rem 0;
+}
+
+.journal-logo-text-container {
+  display: flex;
+  align-items: center;
+  font-weight: 700;
+  gap: 0.5em;
+}
+
+a {
+  text-decoration: none;
+}
+
+.bootcamp-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  background-image: url("../images/bootcamp.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: bottom;
+  padding: 1.5rem;
+  height: 18.75rem; /* adjust as needed */
+  color: white;
+}
+
+.img-logo {
+  width: 2.140625rem;
+}
+
+.nav-tabs-container {
+  display: flex;
+  list-style: none;
+  justify-content: flex-end;
+  gap: 2em;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.date {
+  font-size: 0.9375rem;
+  text-transform: uppercase;
+  margin: 0;
+}
+
+.description {
+  line-height: 1.5;
+  margin: 0;
 }
