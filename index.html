@@ -2,12 +2,11 @@
   <head>
     <title>My Learning Journal</title>
     <!-- Font Styles -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
       rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
     />
+
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -30,11 +29,13 @@
           />
           <p>My Learning Journal</p>
         </div>
-        <ul class="nav-tabs-container">
-          <li><a href="index.html">Home</a></li>
+        <ul class="nav-tabs-container" id="nav-tabs-container">
+          <li><a href="index.html" id="home-tab">Home</a></li>
           <li>
-            <a href="about.html">About Me</a>
+            <a href="about.html" id="about-tab">About Me</a>
           </li>
+          <i class="fa-solid fa-bars" id="hamburger"></i>
+          <i class="fa-solid fa-xmark" id="x"></i>
         </ul>
       </nav>
     </header>
@@ -122,5 +123,6 @@
       <h4>My Learning Journal</h4>
       <p class="copyright">Copyright &copy;2022</p>
     </footer>
+    <script src="index.js"></script>
   </body>
 </html>
