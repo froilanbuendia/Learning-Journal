@@ -9,6 +9,7 @@ body {
   margin: 0;
   padding: 0;
   font-family: "Source Sans 3", sans-serif;
+  background-color: #fafafa;
 }
 nav {
   display: flex;
@@ -16,6 +17,7 @@ nav {
   padding: 1em 2em;
   font-size: 0.9375rem;
   font-family: "Roboto", sans-serif;
+  background-color: white;
 }
 
 h1,
@@ -27,9 +29,31 @@ h2 {
   margin: 0.5rem 0;
 }
 
+.person-desc {
+  margin: 0;
+}
+
 h2 {
   font-size: 1.5rem;
   align-self: flex-start;
+}
+
+h3 {
+  text-align: center;
+  font-size: 1.125rem;
+  font-weight: 700;
+  margin: 2em 0;
+}
+h4 {
+  margin: 0;
+}
+
+footer {
+  text-align: center;
+  background-color: #202020;
+  color: white;
+  padding: 2em 0;
+  font-size: 0.75rem;
 }
 .nav-tabs-container {
   display: flex;
@@ -48,14 +72,24 @@ h2 {
 }
 
 .blog-container {
-  display: flex;
-  flex-direction: column;
+  display: grid;
+  grid-template-columns: 1fr;
   gap: 3em;
-  padding: 1em;
+  padding: 1em 1em 0 1em;
 }
 
 a {
   text-decoration: none;
+  color: black;
+}
+
+.bootcamp-article-container,
+.about-container {
+  padding: 2em 1em;
+}
+
+.recent-posts-container {
+  margin-bottom: 3em;
 }
 
 .bootcamp-container {
@@ -68,17 +102,29 @@ a {
   background-position: bottom;
   padding: 1.5rem;
   width: 100%;
-  height: 18.75rem; /* adjust as needed */
   color: white;
+  aspect-ratio: 16 / 9;
+}
+
+.bootcamp-text {
+  max-width: 37.5rem;
+}
+
+.bootcamp-article-text {
+  max-width: 100%;
 }
 
 .blog-one-container,
 .blog-two-container,
-.blog-three-container {
+.blog-three-container,
+.blog-four-container,
+.blog-five-container,
+.blog-six-container {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
+
 .img-logo {
   width: 2.140625rem;
 }
@@ -86,7 +132,7 @@ a {
 .date {
   font-size: 0.9375rem;
   text-transform: uppercase;
-  margin: 0;
+  margin: 1em 0 0 0;
   align-self: flex-start;
 }
 
@@ -94,8 +140,53 @@ a {
   margin: 0;
 }
 
-.blog-img {
+.blog-img,
+.bootcamp-img {
   height: 14.5rem;
   width: 100%;
   object-fit: cover;
+}
+
+.bootcamp-img {
+  margin: 2em 0;
+  aspect-ratio: 16/9;
+}
+
+.profile-img {
+  width: 11.375rem;
+}
+
+.copyright {
+  margin: 0;
+}
+
+.underline {
+  text-decoration: underline;
+}
+
+@media (min-width: 768px) {
+  .blog-container {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .bootcamp-container {
+    padding: 3rem 2em;
+  }
+  .bootcamp-text {
+    max-width: 43rem;
+  }
+
+  .bootcamp-img {
+    height: auto;
+    max-height: 30.5rem;
+  }
+  .text-padding {
+    padding: 0 5rem;
+  }
+
+  .person-container {
+    display: flex;
+    align-items: center;
+    gap: 2em;
+    margin-bottom: 3em;
+  }
 }
